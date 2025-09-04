@@ -1,52 +1,42 @@
 # AutoOrganizer
 
-Script em Python para organizar automaticamente a pasta Downloads, movendo arquivos para subpastas de acordo com sua extensão (PDFs, imagens, documentos, etc).
+A Python script to automatically organize your Downloads folder by moving files into subfolders based on their extensions (PDFs, Images, Documents, Spreadsheets, etc).
 
 ---
 
-## 🇵🇹 Descrição (Português)
+## Description
 
-Este projeto nasceu de uma necessidade pessoal: ao final do semestre, percebi que minha pasta Downloads estava desorganizada, com centenas de arquivos acumulados. Para facilitar a organização, desenvolvi este script simples.
+This project was born from a personal need: at the end of the semester, I realized my Downloads folder was completely cluttered with hundreds of files. To make my workflow easier, I built this simple automation script.
 
-### O que o script faz:
+### Features
+	•	Automatically detects file extensions.
+	•	Creates subfolders such as PDFs, Images, Spreadsheets, etc.
+	•	Moves files into the appropriate subfolder.
+	•	Skips hidden files and directories.
+	•	Generates an execution log at Organized/records.log.
+	•	Prints a final summary with statistics.
 
-- Detecta automaticamente a extensão dos arquivos
-- Cria subpastas como "PDFs", "Imagens", "Planilhas", etc.
-- Move os arquivos para a subpasta correspondente
+### Technologies Used
+	•	Python 3.12+
+	•	pathlib for path management
+	•	shutil for file handling
+	•	logging for execution records
 
-### Tecnologias utilizadas:
+### How to Use
+	1.	Clone the repository:
+        
+        git clone https://github.com/Sara-Soares-de-Oliveira/AutoOrganizer.git
+        
+        cd AutoOrganizer
+    
+    2.	Edit the script (source = Path(...)) to point to your Downloads folder.
+	
+    3.	Run the script:
+         python3 organizer.py
 
-- Python 3.12 ou superior
-- `pathlib` para manipulação de caminhos
-- `shutil` para movimentação de arquivos
-
-### Melhorias previstas:
-
-- Registro de ações em log (log.txt)
-- Execução automática com agendamento
-
----
-
-## 🇬🇧 Description (English)
-
-This project came from a personal need: at the end of the semester, I noticed my Downloads folder was overloaded with unorganized files. To solve that, I created this simple Python script.
-
-### What the script does:
-
-- Automatically detects file extensions
-- Creates subfolders such as "PDFs", "Images", "Spreadsheets", etc.
-- Moves files into the appropriate folder
-
-### Technologies used:
-
-- Python 3.12+
-- `pathlib` for path management
-- `shutil` for file handling
-
-### Planned improvements:
-
-- Logging to a `log.txt` file
-- Automatic scheduling
+### Automation (optional)
+	•	macOS/Linux: use cron to run the script automatically.
+	•	Windows: use Task Scheduler to set up scheduled runs.
 
 ---
 
@@ -55,6 +45,3 @@ This project came from a personal need: at the end of the semester, I noticed my
 Sara Oliveira  
 [LinkedIn](https://www.linkedin.com/in/sara-oliveira-055a35278/) • [Twitter](https://twitter.com/oliveira_dsc)
 
----
-
-Projeto criado com base em uma necessidade real, como forma de praticar automação e aplicar programação no dia a dia.
